@@ -1,0 +1,35 @@
+﻿respawnOnStart = -1;
+
+class CfgFunctions {
+    #include "tetris\CfgFunctions.hpp"
+};
+
+class CfgMusic {
+    tracks[]={};
+    
+    class TetrisTheme {
+        name = "";
+        sound[] = {"tetrisTheme.ogg", db+0, 1.0};
+    };
+};
+
+class Params {
+    class ParamLevel {
+        title = "Starting level";
+        values[] = {0,2,4,6,8,10,12,14,16,18,19};
+        texts[] = {"0","2","4","6","8","10","12","14","16","18","MAX"};
+        default = 0;
+    };
+    class ParamMusic {
+        title = "Enable music";
+        values[] = {1,0};
+        texts[] = {"YES","NO"};
+        default = 0;
+    };
+    class ParamNight {
+        title = "Night mode";
+        values[] = {1,0};
+        texts[] = {"ON","OFF"};
+        default = 0;
+    };
+};
